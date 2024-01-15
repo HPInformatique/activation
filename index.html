@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Centre d'activation - HP informatique</title>
+  <link rel="icon" href="images/iconkey.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1><img src="images\iconkey.png" alt="Logo HPI Key" width=15px  title="Activation de produit HPI"/>
+    Bienvenue dans le centre d'activation de produits HPI <img src="images\iconkey.png" alt="Logo HPI Key" width=15px  title="Activation de produit HPI"/></h1>
+
+  <hr>
+  <script src="script.js"></script>
+  
+
+
+
+
+  
+  <!-- Pour le bouton entré pour le code de vérif -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).on("keypress", "input", function(e){
+        if(e.which == 13){
+          var reponse = document.getElementById("zone_code").value; // Pour récupérer la valeur entrée
+
+  //                ↓ Le code
+  if (reponse == '268775') { 
+      window.location.href="suitep2o3i4ujhrfgre3y784i50tfr8d7eyz3g45tryudi9e847uy5gt3e0rt98ureh3g4t5r78e9rf7ygetyrtui657.html"
+      let stateObj = { id: "100" };
+              window.history.replaceState(stateObj,
+                          "Centre d'activation - HP Informatique", "/code-vérifié");
+  }
+  else { 
+    document.getElementById('zone_code').value = ""
+    alert('Le code entré est incorrect'); 
+       }
+        }
+      });
+    </script>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <h2>Informations :</h2>
+  <p>Pour continuer l'activation de votre produit HPI, nous devons vérifier que vous faites partie de l'espace membre de HP Informatique. Pour ce faire, il vous faut obtenir un code (étape 1 de l'activation) puis entrer le code dans le champ de confirmation (étape 2). Si vous n'êtes pas connecté(e) à votre compte Google sur cet appareil, il se peut qu'une fenêtre s'ouvre avec la page de connexion de Google. Cela permet de vous authentifier sur le site de HPI. Si vous ne faites pas parti(e) de l'espace membre de HPI, vous tomberez sur une page <a href="https://lh3.googleusercontent.com/pw/ADCreHeoF0CAZW4ey8uF9mJb5nMVgIlwsAba7Vz_lyeHYZt-bdwruY4jCWBTABKxfaRGM60kRVYHYUwATpCtJI_86NJMvahUSjiwte15Etmuvnzj0DXUAMOC5TJvWMmBVk3OccXi90kMk9kQuSSNdjvqnEM=w631-h270-s-no?authuser=0" target="_blank" >404 erreur</a>.</p>
+  <br>
+  <h2>Activation :</h2>
+  <p>L'activation est gratuite ! Connectez-vous à l'espace membre de HPI ci-dessous grâce au code que vous obtiendrez sur le </p>
+<br>
+  <br>
+  <div class="cadre">
+
+    <p class="centerconnexion">CONNEXION À L'ESPACE MEMBRE VIA CODE</p>
+    
+    <fieldset><legend>1 - Obtention du code</legend>
+        <div class="wrapper">
+          <span onclick="afficher_le_code()" class="button">Obtenir mon code</span>
+        </div>
+    </fieldset>
+
+    <fieldset><legend>2 - Confirmation du code</legend>
+      <p>Entrez votre code : <input type="text" id="zone_code" class="entercode"/> <button onclick="verif_code()">Connexion</button> </p>
+
+
+      
+    </fieldset>
+
+    
+  </div>
+  
+
+
+  
+
+</body>
+
+</html>
